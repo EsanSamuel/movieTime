@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Poppins', sans-serif;
+  transition: .5s;
+}
+
+*::-webkit-scrollbar {
+  background-color: transparent;
+  height: 8px;
+  margin-left: 10px;
+  width: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  width: 10px;
+  border-radius: 10px;
+  height: 10px;
+}
+
+.dark-mode {
+  background: #00000d;
+  color: white;
+  transition: .5s;
+}
+
+.dark-mode .card {
+  background: #00000d;
+  color: white;
+  transition: .5s;
+}
+
+
+.navbar {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.details {
+  overflow-x: auto;
+}
+
+.details::-webkit-scrollbar {
+  background-color: transparent;
+  height: 8px;
+  margin-left: 10px;
+}
+
+.details::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  width: 10px;
+  border-radius: 10px;
+  height: 10px;
+}
+
+.movies:hover {
+  height: 100%;
+}
+
+.movie {
+  perspective: 100px;
+}
+
+.img {
+  transform: translateZ(20px);
+}
+
+.search {
+  margin-top: -30px;
+}
+
+.card {
+  top: 10%;
+  left: 25%;
+  transition: .5s;
+}
+
+@media screen and (min-width: 480px) {
+  .nav {
+    display: none;
+  }
+
+  .details {}
+}
+
+@media screen and (max-width: 1130px) {
+  .card {
+    top: 10%;
+    left: 25%;
+    right: 20%;
+    transition: .5s;
+  }
+
+}
+
+@media screen and (max-width:770px) {
+  .ul {
+    display: none;
+  }
+
+  .tt {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .details {
+    overflow-x: auto;
+  }
+
+  .card {
+    top: 2%;
+    left: 2%;
+    right: 2%;
+    overflow: scroll;
+  }
+
+  .imgx {}
+
+  .details::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+    border-radius: 10px;
+    height: 10px;
+  }
+
+  .details::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    width: 10px;
+    border-radius: 10px;
+    height: 10px;
+  }
+
+  .nav {
+    display: block;
+  }
+
+
+
+  .button {
+    display: none;
+  }
+
+
+
+}
+
+@media screen and (max-width:480px) {
+  .details {
+    margin-left: -4%;
+  }
+}
